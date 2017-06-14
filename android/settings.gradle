@@ -1,3 +1,4 @@
 rootProject.name = 'Confetti'
 
-include ':app'
+include ':app', ':react-native-confetti'
+project(':react-native-confetti').projectDir = new File(rootProject.projectDir, '../custom_modules/react-native-confetti/android')
