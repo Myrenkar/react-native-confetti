@@ -10,4 +10,8 @@
 
 @implementation RNConfetti
 
+RCT_EXPORT_MODULE()
+
+
+
 @end

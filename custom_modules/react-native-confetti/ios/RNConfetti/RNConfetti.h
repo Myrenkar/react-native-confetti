@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RCTBridgeModule.h"
 
-@interface RNConfetti : NSObject
+@interface RNConfetti : NSObject <RCTBridgeModule>
 
 @end

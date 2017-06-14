@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7304D5AE1EF1549C00F38413 /* RNConfetti.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfetti.m */; };
 		7304D5AF1EF1549C00F38413 /* RNConfetti.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfetti.h */; };
+		737337E81EF18429001CBE9A /* ConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* ConfettiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		7304D5A91EF1549C00F38413 /* libRNConfetti.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNConfetti.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7304D5AC1EF1549C00F38413 /* RNConfetti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfetti.h; sourceTree = "<group>"; };
 		7304D5AD1EF1549C00F38413 /* RNConfetti.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfetti.m; sourceTree = "<group>"; };
+		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		737337E61EF18429001CBE9A /* ConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfettiView.h; sourceTree = "<group>"; };
+		737337E71EF18429001CBE9A /* ConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfettiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,9 @@
 			children = (
 				7304D5AC1EF1549C00F38413 /* RNConfetti.h */,
 				7304D5AD1EF1549C00F38413 /* RNConfetti.m */,
+				737337E21EF1830C001CBE9A /* Images.xcassets */,
+				737337E61EF18429001CBE9A /* ConfettiView.h */,
+				737337E71EF18429001CBE9A /* ConfettiView.m */,
 			);
 			path = RNConfetti;
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 					7304D5A81EF1549C00F38413 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = SK8PDF7SG9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737337E81EF18429001CBE9A /* ConfettiView.m in Sources */,
 				7304D5AE1EF1549C00F38413 /* RNConfetti.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,20 +233,29 @@
 		7304D5B31EF1549C00F38413 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7304D5B41EF1549C00F38413 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -260,6 +278,7 @@
 				7304D5B41EF1549C00F38413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
