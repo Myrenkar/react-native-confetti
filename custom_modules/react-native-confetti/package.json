@@ -1,0 +1,16 @@
+{
+  "name": "react-native-confetti",
+  "version": "1.0.0",
+  "description": "Confetti for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Confetti"
+  ],
+  "author": "Myrenkar, freszu",
+  "license": "MIT"
+}
