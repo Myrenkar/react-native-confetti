@@ -20,16 +20,55 @@
 
 @implementation ConfettiView
 
-- (instancetype)initWithFrame:(CGRect)frame withView:(UIView *)view {
+#pragma mark Public
+
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initWithFrame:frame withRootView:view];
+        [self setup];
     }
     return self;
 }
 
-- (void)initWithFrame:(CGRect)frame withRootView:(UIView *)view {
-    [self addSubview:view];
+- (void)setType:(ConfettiType)type {
+    self.type = type;
+}
+
+- (void)start {
+    [self startConfetti];
+}
+
+- (void)stop {
+    self.emmiter.birthRate = 0;
+    self.isActive = NO;
+}
+
+- (BOOL)isActive {
+    return self.isActive;
+}
+
+- (void)setIntensity:(float)intensity {
+    self.intensity = intensity;
+}
+
+#pragma mark Private
+
+- (void)startConfetti {
+    self.emmiter = [[CAEmitterLayer alloc] init];
+
+    self.emmiter.emitterPosition = CGPointMake(self.frame.size.width / 2.0, 0);
+    self.emmiter.emitterShape = kCAEmitterLayerLine;
+    self.emmiter.emitterSize = CGSizeMake(self.frame.size.width, 1);
+
+    NSArray<CAEmitterCell *> *cells = [[NSArray alloc] init];
+
+    for (UIColor *color in self.colors) {
+        [cells arrayByAddingObject:[self confettiWithColor:color]];
+    }
+    
+    self.emmiter.emitterCells = cells;
+    [self.layer addSublayer:self.emmiter];
+    self.isActive = YES;
 }
 
 - (void)setup {
@@ -46,40 +85,6 @@
     self.isActive = NO;
 }
 
-
-- (void)setType:(ConfettiType)type {
-    self.type = type;
-}
-
-- (void)start {
-    [self startConfetti];
-}
-
-- (void)stop {
-    self.emmiter.birthRate = 0;
-    self.isActive = NO;
-}
-
-- (BOOL)isActive {
-    return YES;
-}
-
-- (void)startConfetti {
-    self.emmiter = [[CAEmitterLayer alloc] init];
-
-    self.emmiter.emitterPosition = CGPointMake(self.frame.size.width / 2.0, 0);
-    self.emmiter.emitterShape = kCAEmitterLayerLine;
-    self.emmiter.emitterSize = CGSizeMake(self.frame.size.width, 1);
-
-    NSArray<CAEmitterCell *> *cells = [[NSArray alloc] init];
-
-    for (UIColor *color in self.colors) {
-        [cells arrayByAddingObject:[self confettiWithColor:color]];
-    }
-    self.emmiter.emitterCells = cells;
-    [self.layer addSublayer:self.emmiter];
-    self.isActive = YES;
-}
 
 - (CAEmitterCell *)confettiWithColor:(UIColor *)color {
     CAEmitterCell *confettiCell = [[CAEmitterCell alloc] init];
@@ -116,10 +121,7 @@
         case ConfettiTypeTriangle:
             return @"triangle";
             break;
-        default:
-            break;
     }
-
 }
 
 @end
