@@ -6,9 +6,7 @@
  * @flow
  */
 
-import { NativeModules, DeviceEventEmitter } from 'react-native'
-
-const NativePreviewController = NativeModules.RNConfetti
+import {requireNativeComponent, View, ViewPropTypes} from 'react-native';
 
 /**
  * Component allowing to perform create and configure confetti effect.
@@ -17,4 +15,11 @@ class RNConfetti {
 
 }
 
-module.exports = new RNConfetti()
+const iface = {
+    name: 'ConfettiView',
+    propTypes: {
+        ...ViewPropTypes
+    }
+};
+
+module.exports = requireNativeComponent('ConfettiView', iface)

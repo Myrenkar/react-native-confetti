@@ -4,50 +4,68 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
 } from 'react-native';
+import ConfettiView from './custom_modules/react-native-confetti'
 
 export default class Confetti extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
-  }
+
+    componentDidMount() {
+        //this._confetti.start();
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text style={styles.welcome}>
+                    Welcome to React Native!
+                </Text>
+                <Text style={styles.instructions}>
+                    To get started, edit index.android.js
+                </Text>
+                <Text style={styles.instructions}>
+                    Double tap R on your keyboard to reload,{'\n'}
+                    Shake or press menu button for dev menu
+                </Text>
+                <ConfettiView
+                    ref={component => this._confetti = component}
+                    style = {styles.overlay}
+                />
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    },
+    instructions: {
+        textAlign: 'center',
+        color: '#333333',
+        marginBottom: 5,
+    },
+    overlay: {
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        bottom:0,
+        left: 0,
+        opacity: 1
+    }
 });
 
 AppRegistry.registerComponent('Confetti', () => Confetti);
