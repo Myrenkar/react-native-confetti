@@ -21,8 +21,8 @@ public class ConfettiView extends FrameLayout {
     private static final double KONFETTI_MIN_DIRECTION = 0.0;
 
     private boolean isShowingConfetti = false;
-    private int[] colors = new int[]{Color.BLUE};
-    private Shape[] shapes = new Shape[]{Shape.CIRCLE};
+    private int[] colors = new int[]{Color.BLUE, Color.RED, Color.GREEN};
+    private Shape[] shapes = new Shape[]{Shape.CIRCLE, Shape.RECT};
     private KonfettiView konfettiView;
 
     public ConfettiView(Context context) {
@@ -69,6 +69,20 @@ public class ConfettiView extends FrameLayout {
                 }
             }
             isShowingConfetti = false;
+        }
+    }
+
+    public void setColors(int[] colors) {
+        this.colors = colors;
+        for (ParticleSystem particleSystem : konfettiView.getSystems()) {
+            particleSystem.addColors(colors);
+        }
+    }
+
+    public void setShapes(Shape[] shapes) {
+        this.shapes = shapes;
+        for (ParticleSystem particleSystem : konfettiView.getSystems()) {
+            particleSystem.addShapes(shapes);
         }
     }
 }

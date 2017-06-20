@@ -9,6 +9,11 @@
 import {requireNativeComponent, View, findNodeHandle, ViewPropTypes} from 'react-native';
 import React, {Component, PropTypes} from 'react';
 
+const CONFETTI_SHAPES = {
+    CIRCLE: 'circle',
+    RECT: 'rect'
+}
+
 var UIManager = require('UIManager');
 /**
  * Component allowing to perform create and configure confetti effect.
@@ -16,11 +21,9 @@ var UIManager = require('UIManager');
 class RNConfetti extends Component {
 
     static propTypes = {
-        ...View.propTypes
-    }
-
-    render() {
-        return <ConfettiView {...this.props}/>
+        ...View.propTypes,
+        confettiColors: PropTypes.arrayOf(PropTypes.string),
+        confettiShapes: PropTypes.arrayOf(PropTypes.string)
     }
 
     start() {
@@ -38,7 +41,13 @@ class RNConfetti extends Component {
             []
         )
     }
+
+    render() {
+        return <ConfettiView {...this.props}/>
+    }
 }
+
+RNConfetti.ConfettiShapes = CONFETTI_SHAPES
 
 const ConfettiView = requireNativeComponent('ConfettiView', RNConfetti);
 

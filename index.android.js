@@ -17,25 +17,16 @@ import RNConfetti from './custom_modules/react-native-confetti'
 export default class Confetti extends Component {
 
     handlePressStart() {
-        console.log('start')
-
         this._confetti.start()
     }
 
     handlePressStop() {
-        console.log('stop')
-
         this._confetti.stop()
-
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <RNConfetti
-                    ref={component => this._confetti = component}
-                    style={styles.overlay}
-                />
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
@@ -46,6 +37,12 @@ export default class Confetti extends Component {
                     Double tap R on your keyboard to reload,{'\n'}
                     Shake or press menu button for dev menu
                 </Text>
+                <RNConfetti
+                    ref={component => this._confetti = component}
+                    style={styles.overlay}
+                    confettiColors={['lime', 'darkorange', 'yellow']}
+                    confettiShapes={[RNConfetti.ConfettiShapes.CIRCLE, RNConfetti.ConfettiShapes.RECT]}
+                />
                 <Button
                     title={"Press to start"}
                     style={styles.instructions}
