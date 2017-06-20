@@ -7,21 +7,35 @@
 import React, {Component} from 'react';
 import {
     AppRegistry,
+    Button,
     StyleSheet,
     Text,
     View,
 } from 'react-native';
-import ConfettiView from './custom_modules/react-native-confetti'
+import RNConfetti from './custom_modules/react-native-confetti'
 
 export default class Confetti extends Component {
 
-    componentDidMount() {
-        //this._confetti.start();
+    handlePressStart() {
+        console.log('start')
+
+        this._confetti.start()
+    }
+
+    handlePressStop() {
+        console.log('stop')
+
+        this._confetti.stop()
+
     }
 
     render() {
         return (
             <View style={styles.container}>
+                <RNConfetti
+                    ref={component => this._confetti = component}
+                    style={styles.overlay}
+                />
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
@@ -32,9 +46,15 @@ export default class Confetti extends Component {
                     Double tap R on your keyboard to reload,{'\n'}
                     Shake or press menu button for dev menu
                 </Text>
-                <ConfettiView
-                    ref={component => this._confetti = component}
-                    style = {styles.overlay}
+                <Button
+                    title={"Press to start"}
+                    style={styles.instructions}
+                    onPress={() => this.handlePressStart()}
+                />
+                <Button
+                    title={"Press to stop"}
+                    style={styles.instructions}
+                    onPress={() => this.handlePressStop()}
                 />
             </View>
         );
@@ -62,7 +82,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         top: 0,
         right: 0,
-        bottom:0,
+        bottom: 0,
         left: 0,
         opacity: 1
     }
