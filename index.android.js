@@ -45,12 +45,10 @@ export default class Confetti extends Component {
                 />
                 <Button
                     title={"Press to start"}
-                    style={styles.instructions}
                     onPress={() => this.handlePressStart()}
                 />
                 <Button
                     title={"Press to stop"}
-                    style={styles.instructions}
                     onPress={() => this.handlePressStop()}
                 />
             </View>
