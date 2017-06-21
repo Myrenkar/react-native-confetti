@@ -7,12 +7,13 @@
 //
 
 #import "ConfettiView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ConfettiView()
 
-@property (strong, nonatomic) CAEmitterLayer *emmiter;
+@property (strong, nonatomic, readwrite) CAEmitterLayer *emitterLayer;
 @property (strong, nonatomic) NSArray<UIColor *> *colors;
-@property (nonatomic) float intensity;
+@property (strong, nonatomic) NSNumber *intensity;
 @property (nonatomic) ConfettiType type;
 @property (nonatomic) BOOL isActive;
 
@@ -30,7 +31,7 @@
     return self;
 }
 
-- (void)setType:(ConfettiType)type {
+- (void)configureType:(ConfettiType)type {
     self.type = type;
 }
 
@@ -39,73 +40,79 @@
 }
 
 - (void)stop {
-    self.emmiter.birthRate = 0;
+    [self.emitterLayer setBirthRate:0.0];
     self.isActive = NO;
 }
 
-- (BOOL)isActive {
-    return self.isActive;
+- (BOOL)isConfettiActive {
+    return [self isActive];
 }
 
-- (void)setIntensity:(float)intensity {
-    self.intensity = intensity;
+- (void)setIntensityValue:(float)intensity {
+    self.intensity = [NSNumber numberWithFloat:intensity];
 }
 
 #pragma mark Private
 
-- (void)startConfetti {
-    self.emmiter = [[CAEmitterLayer alloc] init];
-
-    self.emmiter.emitterPosition = CGPointMake(self.frame.size.width / 2.0, 0);
-    self.emmiter.emitterShape = kCAEmitterLayerLine;
-    self.emmiter.emitterSize = CGSizeMake(self.frame.size.width, 1);
-
-    NSArray<CAEmitterCell *> *cells = [[NSArray alloc] init];
-
-    for (UIColor *color in self.colors) {
-        [cells arrayByAddingObject:[self confettiWithColor:color]];
-    }
-    
-    self.emmiter.emitterCells = cells;
-    [self.layer addSublayer:self.emmiter];
-    self.isActive = YES;
-}
-
 - (void)setup {
     self.colors = @[
         [UIColor colorWithRed:0.95 green:0.40 blue:0.27 alpha:1.0],
-        [UIColor colorWithRed:1.0 green:0.78 blue:0.36 alpha:1.0],
+        [UIColor colorWithRed:1.00 green:0.78 blue:0.36 alpha:1.0],
         [UIColor colorWithRed:0.48 green:0.78 blue:0.64 alpha:1.0],
         [UIColor colorWithRed:0.30 green:0.76 blue:0.85 alpha:1.0],
         [UIColor colorWithRed:0.58 green:0.39 blue:0.55 alpha:1.0]
     ];
 
-    self.intensity = 0.5;
-    self.type = ConfettiTypeConfetti;
-    self.isActive = NO;
+    [self setIntensity:[NSNumber numberWithFloat:0.8]];
+    self.type = ConfettiTypeStar;
+    [self setIsActive:NO];
 }
 
+- (void)startConfetti {
+    if (![self isConfettiActive]) {
+        self.emitterLayer = [CAEmitterLayer layer];
+        [self.emitterLayer setBackgroundColor:[[UIColor whiteColor] CGColor]];
+        [self.emitterLayer setEmitterPosition:CGPointMake(self.frame.size.width / 2.0, 0)];
+        [self.emitterLayer setEmitterShape: kCAEmitterLayerLine];
+        [self.emitterLayer setEmitterSize:CGSizeMake(self.frame.size.width, 1)];
+        [self.emitterLayer setFrame:self.frame];
+        [self.emitterLayer setEmitterCells:[self prepareCellsWithColors:self.colors]];
+
+        [self.layer addSublayer:self.emitterLayer];
+        [self setIsActive:YES];
+    }
+}
+
+- (NSArray<CAEmitterCell *> *)prepareCellsWithColors:(NSArray<UIColor *> *)colors {
+    NSArray<CAEmitterCell *> *cells = [[NSArray alloc] init];
+    for (UIColor *color in colors) {
+        cells = [cells arrayByAddingObject:[self confettiWithColor:color]];
+    }
+    return  cells;
+}
 
 - (CAEmitterCell *)confettiWithColor:(UIColor *)color {
-    CAEmitterCell *confettiCell = [[CAEmitterCell alloc] init];
-    confettiCell.birthRate = 6.0 * self.intensity;
-    confettiCell.lifetime = 14.0 * self.intensity;
-    confettiCell.lifetimeRange = 0;
-    confettiCell.color = [color CGColor];
-    confettiCell.velocity = (CGFloat)(350.0 * self.intensity);
-    confettiCell.velocityRange = (CGFloat)(80.0 * self.intensity);
-    confettiCell.emissionLongitude = (CGFloat)M_PI;
-    confettiCell.emissionRange = (CGFloat)M_PI_4;
-    confettiCell.spin = (CGFloat)(3.5 * self.intensity);
-    confettiCell.spinRange = (CGFloat)(4.0 * self.intensity);
-    confettiCell.scaleRange = (CGFloat)(self.intensity);
-    confettiCell.scaleSpeed = (CGFloat)(-0.1 * self.intensity);
-    confettiCell.contents = [self imageForType:self.type];
-    return  confettiCell;
+    float intesityValue = [self.intensity floatValue];
+    
+    CAEmitterCell *emitterCell = [CAEmitterCell emitterCell];
+    [emitterCell setBirthRate:10.0 * intesityValue];
+    [emitterCell setLifetime:20.0 * intesityValue];
+    [emitterCell setColor:[color CGColor]];
+    [emitterCell setVelocity:60.0 * intesityValue];
+    [emitterCell setVelocityRange:200.0 * intesityValue];
+    [emitterCell setEmissionLongitude: M_PI];
+    [emitterCell setSpin:3.5 * intesityValue];
+    [emitterCell setSpinRange:4.0 * intesityValue];
+    [emitterCell setScaleRange:intesityValue];
+    [emitterCell setScaleSpeed:-0.1 * intesityValue];
+    [emitterCell setContents:(id)[self imageForType:self.type]];
+    return  emitterCell;
 }
 
-- (UIImage *)imageForType:(ConfettiType)type {
-    return [UIImage imageNamed:[self getFilenameWithType:type]];
+- (CGImageRef)imageForType:(ConfettiType)type {
+    UIImage *confettiImage = [UIImage imageNamed:[self getFilenameWithType:type]];
+    CGImageRef imageRef = [confettiImage CGImage];
+    return imageRef;
 }
 
 - (NSString *)getFilenameWithType:(ConfettiType)type {
