@@ -11,8 +11,11 @@ import {
     StyleSheet,
     Text,
     View,
+    Alert
 } from 'react-native';
 import RNConfetti from './custom_modules/react-native-confetti'
+import RNWifiState from './custom_modules/react-native-wifi-state'
+
 
 export default class Confetti extends Component {
 
@@ -22,6 +25,24 @@ export default class Confetti extends Component {
 
     handlePressStop() {
         this._confetti.stop()
+    }
+
+    showWifiConnectionState() {
+        RNWifiState.isConnectedThroughWifi(isConnectedThroughWifi => {
+                this.showWifiStateDialog(isConnectedThroughWifi);
+            }
+        )
+    }
+
+    showWifiStateDialog(isConnectedThroughWifi) {
+        Alert.alert(
+            'Wifi connection state',
+            `Is connected through wifi: ${isConnectedThroughWifi}`,
+            [
+                {text: 'OK', onPress: () => console.log('OK Pressed')},
+            ],
+            {cancelable: true}
+        )
     }
 
     render() {
@@ -50,6 +71,10 @@ export default class Confetti extends Component {
                 <Button
                     title={"Press to stop"}
                     onPress={() => this.handlePressStop()}
+                />
+                <Button
+                    title={"Press to check wifi connection state"}
+                    onPress={() => this.showWifiConnectionState()}
                 />
             </View>
         );
