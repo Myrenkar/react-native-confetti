@@ -1,13 +1,11 @@
 package co.netguru.android.react.wifistate;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+
+import co.netguru.android.react.wifistate.implementation.WifiStateUtil;
 
 public class WifiStateModule extends ReactContextBaseJavaModule {
 
@@ -29,12 +27,9 @@ public class WifiStateModule extends ReactContextBaseJavaModule {
      */
     @ReactMethod
     public void isConnectedThroughWifi(Callback callback) {
-        final ConnectivityManager connectivityManager = (ConnectivityManager) getReactApplicationContext()
-                .getSystemService(Context.CONNECTIVITY_SERVICE);
-        final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        final boolean isWifiConnected = activeNetworkInfo != null &&
-                activeNetworkInfo.getType() == ConnectivityManager.TYPE_WIFI;
+        final boolean isConnectedThroughWifi =
+                WifiStateUtil.getIsConnectedThroughWifi(getReactApplicationContext());
 
-        callback.invoke(isWifiConnected);
+        callback.invoke(isConnectedThroughWifi);
     }
 }
