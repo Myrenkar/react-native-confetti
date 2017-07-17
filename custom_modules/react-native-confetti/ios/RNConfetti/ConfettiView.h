@@ -6,7 +6,9 @@
 //  Copyright © 2017 Netguru. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
+
 
 /**
  Confetti type enum
@@ -31,7 +33,7 @@ typedef NS_ENUM(NSUInteger, ConfettiType) {
  @param frame frame to used
  @return instantiated receiver
  */
-- (instancetype)initWithFrame:(CGRect)frame;
+- (instancetype)init;
 - (void)setTypeValue:(ConfettiType)type;
 
 /**

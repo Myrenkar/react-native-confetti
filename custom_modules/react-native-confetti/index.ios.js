@@ -9,7 +9,8 @@
 import {requireNativeComponent, View, findNodeHandle, ViewPropTypes, NativeModules} from 'react-native';
 import React, {Component, PropTypes} from 'react';
 
-var RnConfettiModule = NativeModules.RNConfettiManager
+var RNConfettiManager = NativeModules.RNConfettiManager
+var RNConfettiView = requireNativeComponent('ConfettiView', RNConfetti);
 
 const CONFETTI_SHAPES = {
     CIRCLE: 'circle',
@@ -27,11 +28,11 @@ class RNConfetti extends Component {
     }
 
     start() {
-        RnConfettiModule.start(findNodeHandle(this))
+        RNConfettiManager.start(findNodeHandle(this))
     }
 
     stop() {
-        RnConfettiModule.stop(findNodeHandle(this))
+        RNConfettiManager.stop(findNodeHandle(this))
     }
 
     render() {
@@ -39,8 +40,6 @@ class RNConfetti extends Component {
     }
 }
 
-//RNConfetti.ConfettiShapes = CONFETTI_SHAPES
 
-const RNConfettiView = requireNativeComponent('ConfettiView', RNConfetti);
 
 module.exports = RNConfetti;

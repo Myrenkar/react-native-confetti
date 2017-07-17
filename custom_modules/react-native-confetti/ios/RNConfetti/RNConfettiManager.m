@@ -7,9 +7,11 @@
 //
 
 #import <React/RCTBridge.h>
+#import <React/UIView+React.h>
 #import <React/RCTUIManager.h>
 #import "RNConfettiManager.h"
 #import "ConfettiView.h"
+
 
 @interface RNConfettiManager()
 
@@ -46,12 +48,11 @@ RCT_EXPORT_METHOD(isActiveWithCallback:(RCTResponseSenderBlock)callback) {
 RCT_EXPORT_METHOD(start:(nonnull NSNumber *)reactTag)
 {
     [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
-        id view = viewRegistry[reactTag];
-        NSLog(@"View type %@",view);
-        if (![view isKindOfClass:[ConfettiView class]]) {
-            RCTLogError(@"Invalid view returned from registry, expecting ConfettiView, got: %@", view);
+        ConfettiView *confetti = (ConfettiView *)viewRegistry[reactTag];
+        NSLog(@"View type %@",confetti);
+        if (![confetti isKindOfClass:[ConfettiView class]]) {
+            RCTLogError(@"Invalid view returned from registry, expecting ConfettiView, got: %@", confetti);
         } else {
-            ConfettiView *confetti = (ConfettiView *)view;
             [confetti start];
         }
     }];

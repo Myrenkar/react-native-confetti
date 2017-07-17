@@ -23,8 +23,8 @@
 
 #pragma mark Public
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+- (instancetype)init {
+    self = [super init];
     if (self) {
         [self setup];
     }
@@ -49,7 +49,7 @@
 }
 
 - (void)setIntensityValue:(float)intensity {
-    self.intensity = intensity;
+    self.intensity = [NSNumber numberWithFloat:intensity];
 }
 
 #pragma mark Private
