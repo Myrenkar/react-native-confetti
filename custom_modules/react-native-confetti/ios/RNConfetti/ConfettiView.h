@@ -19,10 +19,10 @@ typedef NS_ENUM(NSUInteger, ConfettiType) {
 @interface ConfettiView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame;
-- (void)setType:(ConfettiType)type;
+- (void)setTypeValue:(ConfettiType)type;
 - (void)start;
 - (void)stop;
 - (BOOL)isActive;
-- (void)setIntensity:(float)intensity;
+- (void)setIntensityValue:(float)intensity;
 
 @end

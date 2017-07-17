@@ -7,35 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */; };
-		7304D5AF1EF1549C00F38413 /* RNConfettiManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */; };
-		737337E81EF18429001CBE9A /* ConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* ConfettiView.m */; };
+		737EC7E51F1A800A00371729 /* RNWifiState.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC7E41F1A800A00371729 /* RNWifiState.m */; };
+		737EC7E61F1A800A00371729 /* RNWifiState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 737EC7E31F1A800A00371729 /* RNWifiState.h */; };
+		737EC7F01F1A82D800371729 /* WifiState.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC7EF1F1A82D800371729 /* WifiState.m */; };
+		737EC8241F1A855C00371729 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC8231F1A855C00371729 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7304D5A71EF1549C00F38413 /* CopyFiles */ = {
+		737EC7DE1F1A800A00371729 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				7304D5AF1EF1549C00F38413 /* RNConfettiManager.h in CopyFiles */,
+				737EC7E61F1A800A00371729 /* RNWifiState.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7304D5A91EF1549C00F38413 /* libRNConfetti.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNConfetti.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfettiManager.h; sourceTree = "<group>"; };
-		7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfettiManager.m; sourceTree = "<group>"; };
-		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		737337E61EF18429001CBE9A /* ConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfettiView.h; sourceTree = "<group>"; };
-		737337E71EF18429001CBE9A /* ConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfettiView.m; sourceTree = "<group>"; };
+		737EC7E01F1A800A00371729 /* libRNWifiState.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWifiState.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		737EC7E31F1A800A00371729 /* RNWifiState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNWifiState.h; sourceTree = "<group>"; };
+		737EC7E41F1A800A00371729 /* RNWifiState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNWifiState.m; sourceTree = "<group>"; };
+		737EC7EE1F1A82D800371729 /* WifiState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiState.h; sourceTree = "<group>"; };
+		737EC7EF1F1A82D800371729 /* WifiState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiState.m; sourceTree = "<group>"; };
+		737EC8221F1A855C00371729 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		737EC8231F1A855C00371729 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7304D5A61EF1549C00F38413 /* Frameworks */ = {
+		737EC7DD1F1A800A00371729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,64 +47,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7304D5A01EF1549C00F38413 = {
+		737EC7D71F1A800A00371729 = {
 			isa = PBXGroup;
 			children = (
-				7304D5AB1EF1549C00F38413 /* RNConfetti */,
-				7304D5AA1EF1549C00F38413 /* Products */,
+				737EC7E21F1A800A00371729 /* RNWifiState */,
+				737EC7E11F1A800A00371729 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7304D5AA1EF1549C00F38413 /* Products */ = {
+		737EC7E11F1A800A00371729 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7304D5A91EF1549C00F38413 /* libRNConfetti.a */,
+				737EC7E01F1A800A00371729 /* libRNWifiState.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7304D5AB1EF1549C00F38413 /* RNConfetti */ = {
+		737EC7E21F1A800A00371729 /* RNWifiState */ = {
 			isa = PBXGroup;
 			children = (
-				7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */,
-				7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */,
-				737337E21EF1830C001CBE9A /* Images.xcassets */,
-				737337E61EF18429001CBE9A /* ConfettiView.h */,
-				737337E71EF18429001CBE9A /* ConfettiView.m */,
+				737EC8221F1A855C00371729 /* Reachability.h */,
+				737EC8231F1A855C00371729 /* Reachability.m */,
+				737EC7E31F1A800A00371729 /* RNWifiState.h */,
+				737EC7E41F1A800A00371729 /* RNWifiState.m */,
+				737EC7EE1F1A82D800371729 /* WifiState.h */,
+				737EC7EF1F1A82D800371729 /* WifiState.m */,
 			);
-			path = RNConfetti;
+			path = RNWifiState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7304D5A81EF1549C00F38413 /* RNConfetti */ = {
+		737EC7DF1F1A800A00371729 /* RNWifiState */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7304D5B21EF1549C00F38413 /* Build configuration list for PBXNativeTarget "RNConfetti" */;
+			buildConfigurationList = 737EC7E91F1A800A00371729 /* Build configuration list for PBXNativeTarget "RNWifiState" */;
 			buildPhases = (
-				7304D5A51EF1549C00F38413 /* Sources */,
-				7304D5A61EF1549C00F38413 /* Frameworks */,
-				7304D5A71EF1549C00F38413 /* CopyFiles */,
+				737EC7DC1F1A800A00371729 /* Sources */,
+				737EC7DD1F1A800A00371729 /* Frameworks */,
+				737EC7DE1F1A800A00371729 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RNConfetti;
-			productName = RNConfetti;
-			productReference = 7304D5A91EF1549C00F38413 /* libRNConfetti.a */;
+			name = RNWifiState;
+			productName = RNWifiState;
+			productReference = 737EC7E01F1A800A00371729 /* libRNWifiState.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7304D5A11EF1549C00F38413 /* Project object */ = {
+		737EC7D81F1A800A00371729 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Netguru;
 				TargetAttributes = {
-					7304D5A81EF1549C00F38413 = {
+					737EC7DF1F1A800A00371729 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = SK8PDF7SG9;
 						LastSwiftMigration = 0830;
@@ -110,37 +113,38 @@
 					};
 				};
 			};
-			buildConfigurationList = 7304D5A41EF1549C00F38413 /* Build configuration list for PBXProject "RNConfetti" */;
+			buildConfigurationList = 737EC7DB1F1A800A00371729 /* Build configuration list for PBXProject "RNWifiState" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7304D5A01EF1549C00F38413;
-			productRefGroup = 7304D5AA1EF1549C00F38413 /* Products */;
+			mainGroup = 737EC7D71F1A800A00371729;
+			productRefGroup = 737EC7E11F1A800A00371729 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7304D5A81EF1549C00F38413 /* RNConfetti */,
+				737EC7DF1F1A800A00371729 /* RNWifiState */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7304D5A51EF1549C00F38413 /* Sources */ = {
+		737EC7DC1F1A800A00371729 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737337E81EF18429001CBE9A /* ConfettiView.m in Sources */,
-				7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */,
+				737EC7F01F1A82D800371729 /* WifiState.m in Sources */,
+				737EC8241F1A855C00371729 /* Reachability.m in Sources */,
+				737EC7E51F1A800A00371729 /* RNWifiState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7304D5B01EF1549C00F38413 /* Debug */ = {
+		737EC7E71F1A800A00371729 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -181,14 +185,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		7304D5B11EF1549C00F38413 /* Release */ = {
+		737EC7E81F1A800A00371729 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,19 +228,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7304D5B31EF1549C00F38413 /* Debug */ = {
+		737EC7EA1F1A800A00371729 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SK8PDF7SG9;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -245,12 +250,11 @@
 			};
 			name = Debug;
 		};
-		7304D5B41EF1549C00F38413 /* Release */ = {
+		737EC7EB1F1A800A00371729 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SK8PDF7SG9;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,25 +266,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7304D5A41EF1549C00F38413 /* Build configuration list for PBXProject "RNConfetti" */ = {
+		737EC7DB1F1A800A00371729 /* Build configuration list for PBXProject "RNWifiState" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7304D5B01EF1549C00F38413 /* Debug */,
-				7304D5B11EF1549C00F38413 /* Release */,
+				737EC7E71F1A800A00371729 /* Debug */,
+				737EC7E81F1A800A00371729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7304D5B21EF1549C00F38413 /* Build configuration list for PBXNativeTarget "RNConfetti" */ = {
+		737EC7E91F1A800A00371729 /* Build configuration list for PBXNativeTarget "RNWifiState" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7304D5B31EF1549C00F38413 /* Debug */,
-				7304D5B41EF1549C00F38413 /* Release */,
+				737EC7EA1F1A800A00371729 /* Debug */,
+				737EC7EB1F1A800A00371729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7304D5A11EF1549C00F38413 /* Project object */;
+	rootObject = 737EC7D81F1A800A00371729 /* Project object */;
 }

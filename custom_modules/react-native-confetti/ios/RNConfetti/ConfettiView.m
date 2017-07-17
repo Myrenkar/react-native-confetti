@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void)setType:(ConfettiType)type {
+- (void)setTypeValue:(ConfettiType)type {
     self.type = type;
 }
 
@@ -47,7 +47,7 @@
     return self.isActive;
 }
 
-- (void)setIntensity:(float)intensity {
+- (void)setIntensityValue:(float)intensity {
     self.intensity = intensity;
 }
 

@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTBridgeModule.h"
+#import <React/RCTViewManager.h>
+#import "ConfettiView.h"
 
-@interface RNConfetti : NSObject <RCTBridgeModule>
+
+@interface RNConfettiManager : RCTViewManager
+
 
 @end

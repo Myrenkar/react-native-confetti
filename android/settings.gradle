@@ -1,3 +1,5 @@
 rootProject.name = 'Confetti'
 
-include ':app'
+include ':app', ':react-native-confetti', ':react-native-wifi-state'
+project(':react-native-confetti').projectDir = new File(rootProject.projectDir, '../custom_modules/react-native-confetti/android')
+project(':react-native-wifi-state').projectDir = new File(rootProject.projectDir, '../custom_modules/react-native-wifi-state/android')
