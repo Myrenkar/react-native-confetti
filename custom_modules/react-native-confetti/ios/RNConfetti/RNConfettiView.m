@@ -6,10 +6,12 @@
 //  Copyright © 2017 Netguru. All rights reserved.
 //
 
-#import "ConfettiView.h"
+#import "RNConfettiView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <React/RCTUIManager.h>
 
-@interface ConfettiView()
+
+@interface RNConfettiView()
 
 @property (strong, nonatomic, readwrite) CAEmitterLayer *emitterLayer;
 @property (strong, nonatomic) NSArray<UIColor *> *colors;
@@ -17,17 +19,29 @@
 @property (nonatomic) ConfettiType type;
 @property (nonatomic) BOOL isActive;
 
+
 @end
 
-@implementation ConfettiView
+@implementation RNConfettiView
 
-#pragma mark Public
+//#pragma mark Public
+//
+//- (instancetype)init {
+//    self = [super init];
+//    if (self) {
+//        [self setup];
+//    }
+//    RCTLogError(@"test");
+//    return self;
+//}
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
         [self setup];
     }
+    RCTLogError(@"test");
     return self;
 }
 

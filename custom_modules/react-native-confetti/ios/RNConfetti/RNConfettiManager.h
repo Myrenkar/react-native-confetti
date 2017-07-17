@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <React/RCTUIManager.h>
 #import <React/RCTViewManager.h>
-#import "ConfettiView.h"
 
 
 @interface RNConfettiManager : RCTViewManager
-
 
 @end

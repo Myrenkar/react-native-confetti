@@ -25,23 +25,15 @@ typedef NS_ENUM(NSUInteger, ConfettiType) {
     ConfettiTypeDiamond = 3
 };
 
-@interface ConfettiView : UIView
+@interface RNConfettiView : UIView
+
 
 /**
- Instantiate the receiver
+ Set type
 
- @param frame frame to used
- @return instantiated receiver
+ @param type type
  */
-- (instancetype)init;
 - (void)setTypeValue:(ConfettiType)type;
-
-/**
- Configures the confetti with specific type
-
- @param type confetti type
- */
-- (void)configureType:(ConfettiType)type;
 
 /**
  Starts the confetti animation

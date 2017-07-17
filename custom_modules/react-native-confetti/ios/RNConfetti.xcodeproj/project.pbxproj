@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */; };
 		7304D5AF1EF1549C00F38413 /* RNConfettiManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */; };
-		737337E81EF18429001CBE9A /* ConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* ConfettiView.m */; };
+		737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* RNConfettiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +30,8 @@
 		7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfettiManager.h; sourceTree = "<group>"; };
 		7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfettiManager.m; sourceTree = "<group>"; };
 		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		737337E61EF18429001CBE9A /* ConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfettiView.h; sourceTree = "<group>"; };
-		737337E71EF18429001CBE9A /* ConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfettiView.m; sourceTree = "<group>"; };
+		737337E61EF18429001CBE9A /* RNConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNConfettiView.h; sourceTree = "<group>"; };
+		737337E71EF18429001CBE9A /* RNConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNConfettiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 				7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */,
 				7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */,
 				737337E21EF1830C001CBE9A /* Images.xcassets */,
-				737337E61EF18429001CBE9A /* ConfettiView.h */,
-				737337E71EF18429001CBE9A /* ConfettiView.m */,
+				737337E61EF18429001CBE9A /* RNConfettiView.h */,
+				737337E71EF18429001CBE9A /* RNConfettiView.m */,
 			);
 			path = RNConfetti;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737337E81EF18429001CBE9A /* ConfettiView.m in Sources */,
+				737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */,
 				7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

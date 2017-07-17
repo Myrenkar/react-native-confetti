@@ -16,10 +16,10 @@ import {
 import RNConfetti from './custom_modules/react-native-confetti'
 import RNWifiState from './custom_modules/react-native-wifi-state'
 
-
 export default class Confetti extends Component {
 
     handlePressStart() {
+        console.log(this._confetti.toString())
         this._confetti.start()
     }
 

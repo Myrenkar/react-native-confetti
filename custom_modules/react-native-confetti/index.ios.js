@@ -6,11 +6,16 @@
  * @flow
  */
 
-import {requireNativeComponent, View, findNodeHandle, ViewPropTypes, NativeModules} from 'react-native';
 import React, {Component, PropTypes} from 'react';
+import {
+    Text,
+    View,
+    NativeModules,
+    requireNativeComponent,
+    findNodeHandle,
+} from 'react-native';
 
 var RNConfettiManager = NativeModules.RNConfettiManager
-var RNConfettiView = requireNativeComponent('ConfettiView', RNConfetti);
 
 const CONFETTI_SHAPES = {
     CIRCLE: 'circle',
@@ -23,11 +28,10 @@ class RNConfetti extends Component {
 
     static propTypes = {
         ...View.propTypes,
-        //confettiColors: PropTypes.arrayOf(PropTypes.string),
-        // confettiShapes: PropTypes.arrayOf(PropTypes.string)
     }
 
     start() {
+        console.log("i am here")
         RNConfettiManager.start(findNodeHandle(this))
     }
 
@@ -39,7 +43,6 @@ class RNConfetti extends Component {
         return <RNConfettiView {...this.props}/>
     }
 }
-
-
+var RNConfettiView = requireNativeComponent('RNConfettiView', RNConfetti);
 
 module.exports = RNConfetti;
