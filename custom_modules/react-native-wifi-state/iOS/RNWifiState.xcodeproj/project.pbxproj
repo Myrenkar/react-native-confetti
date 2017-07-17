@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		737EC7E51F1A800A00371729 /* RNWifiState.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC7E41F1A800A00371729 /* RNWifiState.m */; };
+		737EC7E61F1A800A00371729 /* RNWifiState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 737EC7E31F1A800A00371729 /* RNWifiState.h */; };
+		737EC7F01F1A82D800371729 /* WifiState.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC7EF1F1A82D800371729 /* WifiState.m */; };
+		737EC8241F1A855C00371729 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 737EC8231F1A855C00371729 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		737EC7DE1F1A800A00371729 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				737EC7E61F1A800A00371729 /* RNWifiState.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		737EC7E01F1A800A00371729 /* libRNWifiState.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWifiState.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		737EC7E31F1A800A00371729 /* RNWifiState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNWifiState.h; sourceTree = "<group>"; };
+		737EC7E41F1A800A00371729 /* RNWifiState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNWifiState.m; sourceTree = "<group>"; };
+		737EC7EE1F1A82D800371729 /* WifiState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiState.h; sourceTree = "<group>"; };
+		737EC7EF1F1A82D800371729 /* WifiState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiState.m; sourceTree = "<group>"; };
+		737EC8221F1A855C00371729 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		737EC8231F1A855C00371729 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		737EC7DD1F1A800A00371729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		737EC7D71F1A800A00371729 = {
+			isa = PBXGroup;
+			children = (
+				737EC7E21F1A800A00371729 /* RNWifiState */,
+				737EC7E11F1A800A00371729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		737EC7E11F1A800A00371729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				737EC7E01F1A800A00371729 /* libRNWifiState.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		737EC7E21F1A800A00371729 /* RNWifiState */ = {
+			isa = PBXGroup;
+			children = (
+				737EC8221F1A855C00371729 /* Reachability.h */,
+				737EC8231F1A855C00371729 /* Reachability.m */,
+				737EC7E31F1A800A00371729 /* RNWifiState.h */,
+				737EC7E41F1A800A00371729 /* RNWifiState.m */,
+				737EC7EE1F1A82D800371729 /* WifiState.h */,
+				737EC7EF1F1A82D800371729 /* WifiState.m */,
+			);
+			path = RNWifiState;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		737EC7DF1F1A800A00371729 /* RNWifiState */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737EC7E91F1A800A00371729 /* Build configuration list for PBXNativeTarget "RNWifiState" */;
+			buildPhases = (
+				737EC7DC1F1A800A00371729 /* Sources */,
+				737EC7DD1F1A800A00371729 /* Frameworks */,
+				737EC7DE1F1A800A00371729 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNWifiState;
+			productName = RNWifiState;
+			productReference = 737EC7E01F1A800A00371729 /* libRNWifiState.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		737EC7D81F1A800A00371729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Netguru;
+				TargetAttributes = {
+					737EC7DF1F1A800A00371729 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = SK8PDF7SG9;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 737EC7DB1F1A800A00371729 /* Build configuration list for PBXProject "RNWifiState" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 737EC7D71F1A800A00371729;
+			productRefGroup = 737EC7E11F1A800A00371729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				737EC7DF1F1A800A00371729 /* RNWifiState */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		737EC7DC1F1A800A00371729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737EC7F01F1A82D800371729 /* WifiState.m in Sources */,
+				737EC8241F1A855C00371729 /* Reachability.m in Sources */,
+				737EC7E51F1A800A00371729 /* RNWifiState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		737EC7E71F1A800A00371729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		737EC7E81F1A800A00371729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		737EC7EA1F1A800A00371729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		737EC7EB1F1A800A00371729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		737EC7DB1F1A800A00371729 /* Build configuration list for PBXProject "RNWifiState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737EC7E71F1A800A00371729 /* Debug */,
+				737EC7E81F1A800A00371729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737EC7E91F1A800A00371729 /* Build configuration list for PBXNativeTarget "RNWifiState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737EC7EA1F1A800A00371729 /* Debug */,
+				737EC7EB1F1A800A00371729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 737EC7D81F1A800A00371729 /* Project object */;
+}

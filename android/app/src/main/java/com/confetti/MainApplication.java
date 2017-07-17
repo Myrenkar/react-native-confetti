@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import co.netguru.android.react.confetti.ConfettiViewPackage;
+import co.netguru.android.react.wifistate.WifiStatePackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -25,7 +26,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.asList(
                     new MainReactPackage(),
-                    new ConfettiViewPackage()
+                    new ConfettiViewPackage(),
+                    new WifiStatePackage()
             );
         }
     };
