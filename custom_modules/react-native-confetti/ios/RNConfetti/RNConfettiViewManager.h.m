@@ -9,7 +9,6 @@
 #import "RNConfettiViewManager.h"
 #import "RNConfettiView.h"
 
-
 @implementation RNConfettiViewManager
 
 RCT_EXPORT_MODULE()
@@ -25,7 +24,6 @@ RCT_EXPORT_METHOD(stop:(nonnull NSNumber *)reactTag) {
         if (![confetti isKindOfClass:[RNConfettiView class]]) {
             RCTLogError(@"Invalid view returned from registry, expecting ConfettiView, got: %@", viewRegistry);
         } else {
-
             [confetti stop];
         }
     }];

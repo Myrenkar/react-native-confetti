@@ -31,7 +31,6 @@ class RNConfetti extends Component {
     }
 
     start() {
-        console.log("i am here")
         RNConfettiManager.start(findNodeHandle(this))
     }
 
