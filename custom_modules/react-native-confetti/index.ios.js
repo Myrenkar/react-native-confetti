@@ -15,7 +15,7 @@ import {
     findNodeHandle,
 } from 'react-native';
 
-var RNConfettiManager = NativeModules.RNConfettiManager
+var RNConfettiManager = NativeModules.RNConfettiViewManager
 
 const CONFETTI_SHAPES = {
     CIRCLE: 'circle',

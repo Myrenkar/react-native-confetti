@@ -11,6 +11,6 @@
 #import <React/RCTViewManager.h>
 
 
-@interface RNConfettiManager : RCTViewManager
+@interface RNConfettiViewManager : RCTViewManager
 
 @end

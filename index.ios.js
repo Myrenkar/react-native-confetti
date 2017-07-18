@@ -19,7 +19,6 @@ import RNWifiState from './custom_modules/react-native-wifi-state'
 export default class Confetti extends Component {
 
     handlePressStart() {
-        console.log(this._confetti.toString())
         this._confetti.start()
     }
 
@@ -104,7 +103,7 @@ const styles = StyleSheet.create({
         right: 0,
         bottom: 0,
         left: 0,
-        opacity: 1
+        opacity: 1,
     }
 });
 

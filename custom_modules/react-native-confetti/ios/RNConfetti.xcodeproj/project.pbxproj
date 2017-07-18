@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */; };
-		7304D5AF1EF1549C00F38413 /* RNConfettiManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */; };
+		7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */; };
+		7304D5AF1EF1549C00F38413 /* RNConfettiViewManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */; };
 		737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* RNConfettiView.m */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +19,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				7304D5AF1EF1549C00F38413 /* RNConfettiManager.h in CopyFiles */,
+				7304D5AF1EF1549C00F38413 /* RNConfettiViewManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,8 +27,8 @@
 
 /* Begin PBXFileReference section */
 		7304D5A91EF1549C00F38413 /* libRNConfetti.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNConfetti.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfettiManager.h; sourceTree = "<group>"; };
-		7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfettiManager.m; sourceTree = "<group>"; };
+		7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfettiViewManager.h; sourceTree = "<group>"; };
+		7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfettiViewManager.h.m; sourceTree = "<group>"; };
 		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		737337E61EF18429001CBE9A /* RNConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNConfettiView.h; sourceTree = "<group>"; };
 		737337E71EF18429001CBE9A /* RNConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNConfettiView.m; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		7304D5AB1EF1549C00F38413 /* RNConfetti */ = {
 			isa = PBXGroup;
 			children = (
-				7304D5AC1EF1549C00F38413 /* RNConfettiManager.h */,
-				7304D5AD1EF1549C00F38413 /* RNConfettiManager.m */,
+				7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */,
+				7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */,
 				737337E21EF1830C001CBE9A /* Images.xcassets */,
 				737337E61EF18429001CBE9A /* RNConfettiView.h */,
 				737337E71EF18429001CBE9A /* RNConfettiView.m */,
@@ -133,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */,
-				7304D5AE1EF1549C00F38413 /* RNConfettiManager.m in Sources */,
+				7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

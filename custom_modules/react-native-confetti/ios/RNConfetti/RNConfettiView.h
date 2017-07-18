@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <React/RCTComponent.h>
-
 
 /**
  Confetti type enum

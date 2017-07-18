@@ -24,24 +24,11 @@
 
 @implementation RNConfettiView
 
-//#pragma mark Public
-//
-//- (instancetype)init {
-//    self = [super init];
-//    if (self) {
-//        [self setup];
-//    }
-//    RCTLogError(@"test");
-//    return self;
-//}
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self setup];
     }
-    RCTLogError(@"test");
     return self;
 }
 
@@ -136,6 +123,7 @@
             break;
         case ConfettiTypeStar:
             return @"star";
+            break;
         case ConfettiTypeDiamond:
             return @"diamond";
             break;
