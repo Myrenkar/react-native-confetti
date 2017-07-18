@@ -78,7 +78,9 @@
         [self.emitterLayer setEmitterSize:CGSizeMake(self.frame.size.width, 1)];
         [self.emitterLayer setFrame:self.frame];
         [self.emitterLayer setEmitterCells:[self prepareCellsWithColors:self.colors]];
+        [self.emitterLayer setBackgroundColor:[UIColor clearColor].CGColor];
 
+        [self.layer setBackgroundColor: [UIColor clearColor].CGColor];
         [self.layer addSublayer:self.emitterLayer];
         [self setIsActive:YES];
     }

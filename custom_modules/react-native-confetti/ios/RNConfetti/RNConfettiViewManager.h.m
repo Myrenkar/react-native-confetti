@@ -15,6 +15,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view {
     RNConfettiView *confetti = [[RNConfettiView alloc] init];
+    confetti.backgroundColor = [UIColor clearColor];
     return confetti;
 }
 
@@ -35,7 +36,6 @@ RCT_EXPORT_METHOD(start:(nonnull NSNumber *)reactTag) {
         if (![confetti isKindOfClass:[RNConfettiView class]]) {
             RCTLogError(@"Invalid view returned from registry, expecting ConfettiView, got: %@", viewRegistry);
         } else {
-            confetti.frame = [[UIScreen mainScreen] bounds];
             [confetti start];
         }
     }];
