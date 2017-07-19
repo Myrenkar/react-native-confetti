@@ -25,7 +25,7 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
 		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
 		2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
@@ -35,8 +35,9 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ConfettiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ConfettiTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		737EC8211F1A844F00371729 /* libRNWifiState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737EC8201F1A844200371729 /* libRNWifiState.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		B575EB0E1F1D0A0E00E48F63 /* libRNConfetti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B575EB031F1D09E200E48F63 /* libRNConfetti.a */; };
+		B575EB0F1F1D0A1400E48F63 /* libRNWifiState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737EC8201F1A844200371729 /* libRNWifiState.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,20 +216,6 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
-		737EC81A1F1A844200371729 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
-			remoteInfo = "third-party";
-		};
-		737EC81C1F1A844200371729 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
-			remoteInfo = "double-conversion";
-		};
 		737EC81F1F1A844200371729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 737EC7FC1F1A844200371729 /* RNWifiState.xcodeproj */;
@@ -249,6 +236,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
+		};
+		B575EB021F1D09E200E48F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B575EAE31F1D09E100E48F63 /* RNConfetti.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7304D5A91EF1549C00F38413;
+			remoteInfo = RNConfetti;
+		};
+		B575EB051F1D09E200E48F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737338151EF1919D001CBE9A /* RNConfetti.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7304D5A91EF1549C00F38413;
+			remoteInfo = RNConfetti;
+		};
+		B575EB0C1F1D09F500E48F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B575EB081F1D09F400E48F63 /* RNWifiState.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 737EC7E01F1A800A00371729;
+			remoteInfo = RNWifiState;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -275,9 +283,12 @@
 		2D02E47B1E0B4A5D006451C7 /* Confetti-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confetti-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Confetti-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Confetti-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		737338151EF1919D001CBE9A /* RNConfetti.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNConfetti.xcodeproj; path = "../custom_modules/react-native-confetti/ios/RNConfetti.xcodeproj"; sourceTree = "<group>"; };
 		737EC7FC1F1A844200371729 /* RNWifiState.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNWifiState.xcodeproj; path = "../custom_modules/react-native-wifi-state/iOS/RNWifiState.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		B575EAE31F1D09E100E48F63 /* RNConfetti.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNConfetti.xcodeproj; path = "../custom_modules/react-native-confetti/ios/RNConfetti.xcodeproj"; sourceTree = "<group>"; };
+		B575EB081F1D09F400E48F63 /* RNWifiState.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNWifiState.xcodeproj; path = "../custom_modules/react-native-wifi-state/iOS/RNWifiState.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +304,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737EC8211F1A844F00371729 /* libRNWifiState.a in Frameworks */,
+				B575EB0E1F1D0A0E00E48F63 /* libRNConfetti.a in Frameworks */,
+				B575EB0F1F1D0A1400E48F63 /* libRNWifiState.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -313,7 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */,
-				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */,
+				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */,
 				2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */,
 				2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */,
 				2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */,
@@ -435,8 +447,6 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
-				737EC81B1F1A844200371729 /* libthird-party.a */,
-				737EC81D1F1A844200371729 /* libdouble-conversion.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,7 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
-				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -470,7 +480,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				737EC7FC1F1A844200371729 /* RNWifiState.xcodeproj */,
+				B575EB081F1D09F400E48F63 /* RNWifiState.xcodeproj */,
+				B575EAE31F1D09E100E48F63 /* RNConfetti.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -514,6 +525,30 @@
 				00E356EE1AD99517003FC87E /* ConfettiTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Confetti-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Confetti-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B575EADC1F1D09B300E48F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B575EB061F1D09E200E48F63 /* libRNConfetti.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B575EAE41F1D09E100E48F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B575EB031F1D09E200E48F63 /* libRNConfetti.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B575EB091F1D09F400E48F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B575EB0D1F1D09F500E48F63 /* libRNWifiState.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -606,6 +641,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						ProvisioningStyle = Manual;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -674,8 +712,20 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = B575EAE41F1D09E100E48F63 /* Products */;
+					ProjectRef = B575EAE31F1D09E100E48F63 /* RNConfetti.xcodeproj */;
+				},
+				{
+					ProductGroup = B575EADC1F1D09B300E48F63 /* Products */;
+					ProjectRef = 737338151EF1919D001CBE9A /* RNConfetti.xcodeproj */;
+				},
+				{
 					ProductGroup = 737EC7FD1F1A844200371729 /* Products */;
 					ProjectRef = 737EC7FC1F1A844200371729 /* RNWifiState.xcodeproj */;
+				},
+				{
+					ProductGroup = B575EB091F1D09F400E48F63 /* Products */;
+					ProjectRef = B575EB081F1D09F400E48F63 /* RNWifiState.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -843,25 +893,11 @@
 			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRCTAnimation.a;
+			path = "libRCTAnimation-tvOS.a";
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		737EC81B1F1A844200371729 /* libthird-party.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libthird-party.a";
-			remoteRef = 737EC81A1F1A844200371729 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		737EC81D1F1A844200371729 /* libdouble-conversion.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libdouble-conversion.a";
-			remoteRef = 737EC81C1F1A844200371729 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		737EC8201F1A844200371729 /* libRNWifiState.a */ = {
@@ -883,6 +919,27 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B575EB031F1D09E200E48F63 /* libRNConfetti.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNConfetti.a;
+			remoteRef = B575EB021F1D09E200E48F63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B575EB061F1D09E200E48F63 /* libRNConfetti.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNConfetti.a;
+			remoteRef = B575EB051F1D09E200E48F63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B575EB0D1F1D09F500E48F63 /* libRNWifiState.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNWifiState.a;
+			remoteRef = B575EB0C1F1D09F500E48F63 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1058,6 +1115,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../custom_modules/react-native-confetti/ios/RNConfetti";
 				INFOPLIST_FILE = Confetti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1066,6 +1125,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = Confetti;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1075,6 +1135,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../custom_modules/react-native-confetti/ios/RNConfetti";
 				INFOPLIST_FILE = Confetti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1083,6 +1145,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = Confetti;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

@@ -3,10 +3,17 @@
  */
 'use strict'
 
-import { Platform } from 'react-native'
+import {Platform, NativeModules} from 'react-native'
 
-const RNWifiState = (Platform.OS === 'ios')
-  ? require('./index.ios.js')
-  : require('./index.android.js')
+const NativeWifiStateModule = (Platform.OS === 'ios')
+    ? NativeModules.RNWifiState
+    : NativeModules.WifiStateModule
 
-export default RNWifiState
+/**
+ * Component allowing to perform and export preview of specified audio file.
+ */
+export default class RNWifiState {
+    static isConnectedThroughWifi(callback: (isConnected: boolean) => void) {
+        NativeWifiStateModule.isConnectedThroughWifi(callback)
+    }
+}

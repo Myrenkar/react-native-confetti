@@ -12,16 +12,11 @@
 
 @interface RNWifiState()
 
-@property WifiState *wifiState;
-
 @end
-
 
 @implementation RNWifiState
 
-
 RCT_EXPORT_MODULE()
-
 
 RCT_EXPORT_METHOD(isConnectedThroughWifi:(RCTResponseSenderBlock)callback) {
     if (callback) {
