@@ -16,6 +16,6 @@
             @"star" : @(ConfettiTypeStar),
             @"diamond" : @(ConfettiTypeDiamond),
         }),
-    ConfettiTypeConfetti, integerValue)
+    ConfettiTypeDiamond, integerValue)
 
 @end

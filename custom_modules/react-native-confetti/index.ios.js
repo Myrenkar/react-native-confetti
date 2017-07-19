@@ -17,10 +17,6 @@ import {
 
 var RNConfettiManager = NativeModules.RNConfettiViewManager
 
-const CONFETTI_SHAPES = {
-    CIRCLE: 'circle',
-    RECT: 'rect'
-}
 /**
  * Component allowing to perform create and configure confetti effect.
  */
@@ -28,6 +24,7 @@ class RNConfetti extends Component {
 
     static propTypes = {
         ...View.propTypes,
+        confettiType: React.PropTypes.oneOf(['star', 'diamond', 'triangle', 'confetti']),
     }
 
     start() {

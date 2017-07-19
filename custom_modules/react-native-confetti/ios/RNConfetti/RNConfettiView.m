@@ -17,8 +17,8 @@
 @property (strong, nonatomic) NSArray<UIColor *> *colors;
 @property (strong, nonatomic) NSNumber *intensity;
 @property (nonatomic) ConfettiType type;
-@property (nonatomic) BOOL isActive;
 
+@property (nonatomic) BOOL isActive;
 
 @end
 

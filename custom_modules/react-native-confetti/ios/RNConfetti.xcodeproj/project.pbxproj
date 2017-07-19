@@ -67,9 +67,9 @@
 		7304D5AB1EF1549C00F38413 /* RNConfetti */ = {
 			isa = PBXGroup;
 			children = (
+				737337E21EF1830C001CBE9A /* Images.xcassets */,
 				7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */,
 				7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */,
-				737337E21EF1830C001CBE9A /* Images.xcassets */,
 				737337E61EF18429001CBE9A /* RNConfettiView.h */,
 				737337E71EF18429001CBE9A /* RNConfettiView.m */,
 				73C9681F1F1FCCE900C13D84 /* RCTConvert+ConfettiType.h */,
