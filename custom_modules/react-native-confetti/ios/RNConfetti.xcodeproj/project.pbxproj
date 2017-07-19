@@ -10,6 +10,7 @@
 		7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */; };
 		7304D5AF1EF1549C00F38413 /* RNConfettiViewManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */; };
 		737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* RNConfettiView.m */; };
+		73C968211F1FCCE900C13D84 /* RCTConvert+ConfettiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		737337E61EF18429001CBE9A /* RNConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNConfettiView.h; sourceTree = "<group>"; };
 		737337E71EF18429001CBE9A /* RNConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNConfettiView.m; sourceTree = "<group>"; };
+		73C9681F1F1FCCE900C13D84 /* RCTConvert+ConfettiType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+ConfettiType.h"; sourceTree = "<group>"; };
+		73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+ConfettiType.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				737337E21EF1830C001CBE9A /* Images.xcassets */,
 				737337E61EF18429001CBE9A /* RNConfettiView.h */,
 				737337E71EF18429001CBE9A /* RNConfettiView.m */,
+				73C9681F1F1FCCE900C13D84 /* RCTConvert+ConfettiType.h */,
+				73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */,
 			);
 			path = RNConfetti;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			files = (
 				737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */,
 				7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */,
+				73C968211F1FCCE900C13D84 /* RCTConvert+ConfettiType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,7 +61,7 @@ export default class Confetti extends Component {
                     ref={component => this._confetti = component}
                     style={styles.overlay}
                     //confettiColors={['lime', 'darkorange', 'yellow']}
-                   // confettiShapes={[RNConfetti.ConfettiShapes.CIRCLE, RNConfetti.ConfettiShapes.RECT]}
+                    // confettiShapes={[RNConfetti.ConfettiShapes.CIRCLE, RNConfetti.ConfettiShapes.RECT]}
                 />
                 <Button
                     title={"Press to start"}
