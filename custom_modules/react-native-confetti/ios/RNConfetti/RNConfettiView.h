@@ -25,14 +25,6 @@ typedef NS_ENUM(NSUInteger, ConfettiType) {
 
 @interface RNConfettiView : UIView
 
-
-/**
- Set type
-
- @param type type
- */
-- (void)setTypeValue:(ConfettiType)type;
-
 /**
  Starts the confetti animation
  */
@@ -50,7 +42,6 @@ typedef NS_ENUM(NSUInteger, ConfettiType) {
  @return boolean if confetti is active.
  */
 - (BOOL)isConfettiActive;
-
 
 /**
  Sets confetti intensity.

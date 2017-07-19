@@ -46,15 +46,4 @@ RCT_EXPORT_METHOD(start:(nonnull NSNumber *)reactTag) {
     }];
 }
 
-//RCT_EXPORT_METHOD(setType:(ConfettiType)type :(nonnull NSNumber *)reactTag) {
-//    [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
-//        RNConfettiView *confetti = (RNConfettiView *)viewRegistry[reactTag];
-//        if (![confetti isKindOfClass:[RNConfettiView class]]) {
-//            RCTLogError(@"Invalid view returned from registry, expecting ConfettiView, got: %@", viewRegistry);
-//        } else {
-//            [confetti setTypeValue:type];
-//        }
-//    }];
-//}
-
 @end

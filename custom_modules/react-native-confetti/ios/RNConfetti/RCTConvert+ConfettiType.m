@@ -8,13 +8,14 @@
 
 #import "RCTConvert+ConfettiType.h"
 
-@implementation RCTConvert (ConfettiType)
+@implementation RCTConvert (RNConfettiType)
+
     RCT_ENUM_CONVERTER(ConfettiType,
         (@{
             @"confetti" : @(ConfettiTypeConfetti),
             @"triangle" : @(ConfettiTypeTriangle),
-            @"star" : @(ConfettiTypeStar),
-            @"diamond" : @(ConfettiTypeDiamond),
+            @"star"     : @(ConfettiTypeStar),
+            @"diamond"  : @(ConfettiTypeDiamond),
         }),
     ConfettiTypeDiamond, integerValue)
 

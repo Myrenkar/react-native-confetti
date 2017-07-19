@@ -9,6 +9,6 @@
 #import <React/RCTConvert.h>
 #import "RNConfettiView.h"
 
-@interface RCTConvert (ConfettiType)
+@interface RCTConvert (RNConfettiType)
 
 @end

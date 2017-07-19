@@ -16,7 +16,7 @@
 @property (strong, nonatomic, readwrite) CAEmitterLayer *emitterLayer;
 @property (strong, nonatomic) NSArray<UIColor *> *colors;
 @property (strong, nonatomic) NSNumber *intensity;
-@property (nonatomic) ConfettiType type;
+@property (nonatomic) ConfettiType confettiType;
 
 @property (nonatomic) BOOL isActive;
 
@@ -33,7 +33,7 @@
 }
 
 - (void)setTypeValue:(ConfettiType)type {
-    self.type = type;
+    self.confettiType = type;
 }
 
 - (void)start {
@@ -65,7 +65,6 @@
     ];
 
     [self setIntensity:[NSNumber numberWithFloat:0.8]];
-    self.type = ConfettiTypeStar;
     [self setIsActive:NO];
 }
 
@@ -108,7 +107,7 @@
     [emitterCell setSpinRange:4.0 * intesityValue];
     [emitterCell setScaleRange:intesityValue];
     [emitterCell setScaleSpeed:-0.1 * intesityValue];
-    [emitterCell setContents:(id)[self imageForType:self.type]];
+    [emitterCell setContents:(id)[self imageForType:self.confettiType]];
     return  emitterCell;
 }
 
