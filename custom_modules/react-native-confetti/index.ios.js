@@ -1,18 +1,44 @@
+/* eslint valid-jsdoc: "error" */
+/* eslint max-len: ["error", 100, { "ignoreComments": true }] */
+
 /**
  * @providesModule RNConfetti
  * @flow
  */
-'use strict';
 
-import { NativeModules, DeviceEventEmitter } from 'react-native';
-const NativePreviewController = NativeModules.RNConfetti;
+import React, {Component, PropTypes} from 'react';
+import {
+    Text,
+    View,
+    NativeModules,
+    requireNativeComponent,
+    findNodeHandle,
+} from 'react-native';
+
+var RNConfettiManager = NativeModules.RNConfettiViewManager
 
 /**
- * Component allowing to perform and export preview of specified audio file.
+ * Component allowing to perform create and configure confetti effect.
  */
+class RNConfetti extends Component {
 
- var RNConfetti = {
+    static propTypes = {
+        ...View.propTypes,
+        confettiType: React.PropTypes.oneOf(['star', 'diamond', 'triangle', 'confetti']),
+    }
 
- }
+    start() {
+        RNConfettiManager.start(findNodeHandle(this))
+    }
 
- module.exports = RNConfetti;
+    stop() {
+        RNConfettiManager.stop(findNodeHandle(this))
+    }
+
+    render() {
+        return <RNConfettiView {...this.props}/>
+    }
+}
+var RNConfettiView = requireNativeComponent('RNConfettiView', RNConfetti);
+
+module.exports = RNConfetti;

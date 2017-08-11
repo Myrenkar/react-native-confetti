@@ -87,3 +87,4 @@ buck-out/
 \.buckd/
 *.keystore
 
+jsconfig.json

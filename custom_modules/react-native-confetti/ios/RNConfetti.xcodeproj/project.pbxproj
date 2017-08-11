@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */; };
+		7304D5AF1EF1549C00F38413 /* RNConfettiViewManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */; };
+		737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737337E71EF18429001CBE9A /* RNConfettiView.m */; };
+		73C968211F1FCCE900C13D84 /* RCTConvert+ConfettiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7304D5A71EF1549C00F38413 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				7304D5AF1EF1549C00F38413 /* RNConfettiViewManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7304D5A91EF1549C00F38413 /* libRNConfetti.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNConfetti.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNConfettiViewManager.h; sourceTree = "<group>"; };
+		7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNConfettiViewManager.h.m; sourceTree = "<group>"; };
+		737337E21EF1830C001CBE9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		737337E61EF18429001CBE9A /* RNConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNConfettiView.h; sourceTree = "<group>"; };
+		737337E71EF18429001CBE9A /* RNConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNConfettiView.m; sourceTree = "<group>"; };
+		73C9681F1F1FCCE900C13D84 /* RCTConvert+ConfettiType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+ConfettiType.h"; sourceTree = "<group>"; };
+		73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+ConfettiType.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7304D5A61EF1549C00F38413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7304D5A01EF1549C00F38413 = {
+			isa = PBXGroup;
+			children = (
+				7304D5AB1EF1549C00F38413 /* RNConfetti */,
+				7304D5AA1EF1549C00F38413 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7304D5AA1EF1549C00F38413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7304D5A91EF1549C00F38413 /* libRNConfetti.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7304D5AB1EF1549C00F38413 /* RNConfetti */ = {
+			isa = PBXGroup;
+			children = (
+				737337E21EF1830C001CBE9A /* Images.xcassets */,
+				7304D5AC1EF1549C00F38413 /* RNConfettiViewManager.h */,
+				7304D5AD1EF1549C00F38413 /* RNConfettiViewManager.h.m */,
+				737337E61EF18429001CBE9A /* RNConfettiView.h */,
+				737337E71EF18429001CBE9A /* RNConfettiView.m */,
+				73C9681F1F1FCCE900C13D84 /* RCTConvert+ConfettiType.h */,
+				73C968201F1FCCE900C13D84 /* RCTConvert+ConfettiType.m */,
+			);
+			path = RNConfetti;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7304D5A81EF1549C00F38413 /* RNConfetti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7304D5B21EF1549C00F38413 /* Build configuration list for PBXNativeTarget "RNConfetti" */;
+			buildPhases = (
+				7304D5A51EF1549C00F38413 /* Sources */,
+				7304D5A61EF1549C00F38413 /* Frameworks */,
+				7304D5A71EF1549C00F38413 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNConfetti;
+			productName = RNConfetti;
+			productReference = 7304D5A91EF1549C00F38413 /* libRNConfetti.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7304D5A11EF1549C00F38413 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Netguru;
+				TargetAttributes = {
+					7304D5A81EF1549C00F38413 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = SK8PDF7SG9;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7304D5A41EF1549C00F38413 /* Build configuration list for PBXProject "RNConfetti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7304D5A01EF1549C00F38413;
+			productRefGroup = 7304D5AA1EF1549C00F38413 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7304D5A81EF1549C00F38413 /* RNConfetti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7304D5A51EF1549C00F38413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737337E81EF18429001CBE9A /* RNConfettiView.m in Sources */,
+				7304D5AE1EF1549C00F38413 /* RNConfettiViewManager.h.m in Sources */,
+				73C968211F1FCCE900C13D84 /* RCTConvert+ConfettiType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7304D5B01EF1549C00F38413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7304D5B11EF1549C00F38413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7304D5B31EF1549C00F38413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7304D5B41EF1549C00F38413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../node_modules/react-native/React/**";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7304D5A41EF1549C00F38413 /* Build configuration list for PBXProject "RNConfetti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7304D5B01EF1549C00F38413 /* Debug */,
+				7304D5B11EF1549C00F38413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7304D5B21EF1549C00F38413 /* Build configuration list for PBXNativeTarget "RNConfetti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7304D5B31EF1549C00F38413 /* Debug */,
+				7304D5B41EF1549C00F38413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7304D5A11EF1549C00F38413 /* Project object */;
+}
